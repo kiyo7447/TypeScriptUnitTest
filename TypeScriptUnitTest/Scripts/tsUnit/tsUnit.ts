@@ -253,7 +253,9 @@ module tsUnit {
         private setRefreshOnLinksWithHash() {
             var previousHandler = window.onhashchange;
 
-            window.onhashchange = function (ev: HashChangeEvent) {
+            window.onhashchange = function (ev: any) {
+
+//            window.onhashchange = function (ev: HashChangeEvent) {
                 window.location.reload();
 
                 if (typeof previousHandler === 'function') {

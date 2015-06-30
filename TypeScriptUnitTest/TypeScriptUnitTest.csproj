@@ -24,6 +24,8 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app.ts" />
+    <TypeScriptCompile Include="Calculations.ts" />
+    <TypeScriptCompile Include="CalculationsTests.ts" />
     <TypeScriptCompile Include="Scripts\tsUnit\tsUnit.ts" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,5 @@
-﻿class Greeter {
+﻿/// <reference path="calculationstests.ts" />
+class Greeter {
     element: HTMLElement;
     span: HTMLElement;
     timerToken: number;
@@ -15,7 +16,16 @@
         this.timerToken = setInterval(() => this.span.innerHTML = new Date().toUTCString(), 500);
 
 
+		//test
 
+		var test = new tsUnit.Test(CalculationsTest);
+
+		var result = test.run();
+
+		var outcome = (result.errors.length === 0) ? 'Test Passd' : 'Test Failed';
+
+		console.log('成功:' + result.passes.length);
+		console.log('失敗:' + result.errors.length);
 
     }
 
