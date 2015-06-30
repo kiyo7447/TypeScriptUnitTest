@@ -16,7 +16,7 @@ class Greeter {
         this.timerToken = setInterval(() => this.span.innerHTML = new Date().toUTCString(), 500);
 
 
-		//test
+		//テストコードのサンプル
 
 		var test = new tsUnit.Test(CalculationsTest);
 
